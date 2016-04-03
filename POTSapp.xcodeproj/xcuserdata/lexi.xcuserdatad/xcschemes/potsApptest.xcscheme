@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D39399EB1C5E815100F5C010"
-               BuildableName = "potsApptest.app"
-               BlueprintName = "potsApptest"
-               ReferencedContainer = "container:potsApptest.xcodeproj">
+               BuildableName = "POTSapp.app"
+               BlueprintName = "POTSapp"
+               ReferencedContainer = "container:POTSapp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D39399FF1C5E815100F5C010"
-               BuildableName = "potsApptestTests.xctest"
-               BlueprintName = "potsApptestTests"
-               ReferencedContainer = "container:potsApptest.xcodeproj">
+               BuildableName = "potsAppTests.xctest"
+               BlueprintName = "potsAppTests"
+               ReferencedContainer = "container:POTSapp.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "D3939A0A1C5E815100F5C010"
-               BuildableName = "potsApptestUITests.xctest"
-               BlueprintName = "potsApptestUITests"
-               ReferencedContainer = "container:potsApptest.xcodeproj">
+               BuildableName = "potsAppUITests.xctest"
+               BlueprintName = "potsAppUITests"
+               ReferencedContainer = "container:POTSapp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D39399EB1C5E815100F5C010"
-            BuildableName = "potsApptest.app"
-            BlueprintName = "potsApptest"
-            ReferencedContainer = "container:potsApptest.xcodeproj">
+            BuildableName = "POTSapp.app"
+            BlueprintName = "POTSapp"
+            ReferencedContainer = "container:POTSapp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D39399EB1C5E815100F5C010"
-            BuildableName = "potsApptest.app"
-            BlueprintName = "potsApptest"
-            ReferencedContainer = "container:potsApptest.xcodeproj">
+            BuildableName = "POTSapp.app"
+            BlueprintName = "POTSapp"
+            ReferencedContainer = "container:POTSapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "D39399EB1C5E815100F5C010"
-            BuildableName = "potsApptest.app"
-            BlueprintName = "potsApptest"
-            ReferencedContainer = "container:potsApptest.xcodeproj">
+            BuildableName = "POTSapp.app"
+            BlueprintName = "POTSapp"
+            ReferencedContainer = "container:POTSapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

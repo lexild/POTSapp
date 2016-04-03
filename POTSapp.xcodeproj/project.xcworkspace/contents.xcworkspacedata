@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:potsApptest.xcodeproj">
+      location = "self:/Users/lexi/Desktop/potsApp artefacts/potsApptest/POTSapp.xcodeproj">
    </FileRef>
 </Workspace>

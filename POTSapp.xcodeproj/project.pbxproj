@@ -3,17 +3,38 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 47;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D34EACD31CB13A3900571B47 /* POTSreminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EACD21CB13A3900571B47 /* POTSreminder.swift */; };
+		D34EACD51CB13E8600571B47 /* MedReminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EACD41CB13E8600571B47 /* MedReminder.swift */; };
+		D34EACD71CB13F7500571B47 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EACD61CB13F7500571B47 /* Reminder.swift */; };
+		D34FB87A1C8264AE009696D2 /* capsule.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8791C8264AE009696D2 /* capsule.png */; };
+		D34FB87C1C826D7F009696D2 /* nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB87B1C826D7F009696D2 /* nurse.png */; };
+		D34FB87E1C826F02009696D2 /* doctor_assistant.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB87D1C826F02009696D2 /* doctor_assistant.png */; };
+		D34FB8801C826F08009696D2 /* doctor_suitecase.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB87F1C826F08009696D2 /* doctor_suitecase.png */; };
+		D34FB8821C827950009696D2 /* lightbulb.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8811C827950009696D2 /* lightbulb.png */; };
+		D34FB8841C8279C6009696D2 /* date.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8831C8279C6009696D2 /* date.png */; };
+		D34FB8861C8279D1009696D2 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8851C8279D1009696D2 /* bell.png */; };
+		D34FB8881C8279DB009696D2 /* bell-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8871C8279DB009696D2 /* bell-1.png */; };
+		D34FB88A1C8279F0009696D2 /* feel_sick.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8891C8279F0009696D2 /* feel_sick.png */; };
+		D34FB88C1C827B78009696D2 /* 111140282.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = D34FB88B1C827B78009696D2 /* 111140282.jpeg */; };
+		D34FB88E1C827CDF009696D2 /* ktip.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB88D1C827CDF009696D2 /* ktip.png */; };
+		D34FB8901C827CEE009696D2 /* ktip-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB88F1C827CEE009696D2 /* ktip-1.png */; };
+		D34FB8921C827D0D009696D2 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8911C827D0D009696D2 /* user.png */; };
 		D39399F01C5E815100F5C010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39399EF1C5E815100F5C010 /* AppDelegate.swift */; };
-		D39399F21C5E815100F5C010 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39399F11C5E815100F5C010 /* ViewController.swift */; };
 		D39399F51C5E815100F5C010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39399F31C5E815100F5C010 /* Main.storyboard */; };
 		D39399F71C5E815100F5C010 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D39399F61C5E815100F5C010 /* Assets.xcassets */; };
 		D39399FA1C5E815100F5C010 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39399F81C5E815100F5C010 /* LaunchScreen.storyboard */; };
 		D3939A051C5E815100F5C010 /* potsApptestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3939A041C5E815100F5C010 /* potsApptestTests.swift */; };
 		D3939A101C5E815100F5C010 /* potsApptestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3939A0F1C5E815100F5C010 /* potsApptestUITests.swift */; };
+		D3939A201C5E87AC00F5C010 /* smaller settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D3939A1F1C5E87AC00F5C010 /* smaller settings.png */; };
+		D3F7E0221CAFFBA900DE194D /* potsRemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */; };
+		D3F7E0241CAFFBCC00DE194D /* MyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */; };
+		D3F7E0261CB050EB00DE194D /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0251CB050EB00DE194D /* homeViewController.swift */; };
+		D3F7E02A1CB0552A00DE194D /* medRemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0291CB0552A00DE194D /* medRemindersTableViewController.swift */; };
+		D3F7E02E1CB06F5D00DE194D /* medSettingsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E02D1CB06F5D00DE194D /* medSettingsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,19 +55,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D39399EC1C5E815100F5C010 /* potsApptest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = potsApptest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D34EACD21CB13A3900571B47 /* POTSreminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTSreminder.swift; sourceTree = "<group>"; };
+		D34EACD41CB13E8600571B47 /* MedReminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MedReminder.swift; sourceTree = "<group>"; };
+		D34EACD61CB13F7500571B47 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
+		D34FB8791C8264AE009696D2 /* capsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capsule.png; sourceTree = "<group>"; };
+		D34FB87B1C826D7F009696D2 /* nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse.png; sourceTree = "<group>"; };
+		D34FB87D1C826F02009696D2 /* doctor_assistant.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor_assistant.png; sourceTree = "<group>"; };
+		D34FB87F1C826F08009696D2 /* doctor_suitecase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = doctor_suitecase.png; sourceTree = "<group>"; };
+		D34FB8811C827950009696D2 /* lightbulb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lightbulb.png; sourceTree = "<group>"; };
+		D34FB8831C8279C6009696D2 /* date.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = date.png; sourceTree = "<group>"; };
+		D34FB8851C8279D1009696D2 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
+		D34FB8871C8279DB009696D2 /* bell-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell-1.png"; sourceTree = "<group>"; };
+		D34FB8891C8279F0009696D2 /* feel_sick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = feel_sick.png; sourceTree = "<group>"; };
+		D34FB88B1C827B78009696D2 /* 111140282.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 111140282.jpeg; sourceTree = "<group>"; };
+		D34FB88D1C827CDF009696D2 /* ktip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ktip.png; sourceTree = "<group>"; };
+		D34FB88F1C827CEE009696D2 /* ktip-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ktip-1.png"; sourceTree = "<group>"; };
+		D34FB8911C827D0D009696D2 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		D39399EC1C5E815100F5C010 /* POTSapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POTSapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39399EF1C5E815100F5C010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D39399F11C5E815100F5C010 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D39399F41C5E815100F5C010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D39399F61C5E815100F5C010 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D39399F91C5E815100F5C010 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D39399FB1C5E815100F5C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3939A001C5E815100F5C010 /* potsApptestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = potsApptestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3939A001C5E815100F5C010 /* potsAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = potsAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3939A041C5E815100F5C010 /* potsApptestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = potsApptestTests.swift; sourceTree = "<group>"; };
 		D3939A061C5E815100F5C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D3939A0B1C5E815100F5C010 /* potsApptestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = potsApptestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3939A0B1C5E815100F5C010 /* potsAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = potsAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3939A0F1C5E815100F5C010 /* potsApptestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = potsApptestUITests.swift; sourceTree = "<group>"; };
 		D3939A111C5E815100F5C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3939A1F1C5E87AC00F5C010 /* smaller settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smaller settings.png"; sourceTree = "<group>"; };
+		D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = potsRemindersTableViewController.swift; sourceTree = "<group>"; };
+		D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailsViewController.swift; sourceTree = "<group>"; };
+		D3F7E0251CB050EB00DE194D /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
+		D3F7E0291CB0552A00DE194D /* medRemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = medRemindersTableViewController.swift; path = ../medRemindersTableViewController.swift; sourceTree = "<group>"; };
+		D3F7E02D1CB06F5D00DE194D /* medSettingsDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = medSettingsDetailViewController.swift; path = ../medSettingsDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +119,9 @@
 		D39399E31C5E815100F5C010 = {
 			isa = PBXGroup;
 			children = (
-				D39399EE1C5E815100F5C010 /* potsApptest */,
-				D3939A031C5E815100F5C010 /* potsApptestTests */,
-				D3939A0E1C5E815100F5C010 /* potsApptestUITests */,
+				D39399EE1C5E815100F5C010 /* potsApp */,
+				D3939A031C5E815100F5C010 /* potsAppTests */,
+				D3939A0E1C5E815100F5C010 /* potsAppUITests */,
 				D39399ED1C5E815100F5C010 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,50 +129,90 @@
 		D39399ED1C5E815100F5C010 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D39399EC1C5E815100F5C010 /* potsApptest.app */,
-				D3939A001C5E815100F5C010 /* potsApptestTests.xctest */,
-				D3939A0B1C5E815100F5C010 /* potsApptestUITests.xctest */,
+				D39399EC1C5E815100F5C010 /* POTSapp.app */,
+				D3939A001C5E815100F5C010 /* potsAppTests.xctest */,
+				D3939A0B1C5E815100F5C010 /* potsAppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D39399EE1C5E815100F5C010 /* potsApptest */ = {
+		D39399EE1C5E815100F5C010 /* potsApp */ = {
 			isa = PBXGroup;
 			children = (
 				D39399EF1C5E815100F5C010 /* AppDelegate.swift */,
-				D39399F11C5E815100F5C010 /* ViewController.swift */,
+				D3F7E0251CB050EB00DE194D /* homeViewController.swift */,
+				D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */,
+				D3F7E02D1CB06F5D00DE194D /* medSettingsDetailViewController.swift */,
+				D3F7E0291CB0552A00DE194D /* medRemindersTableViewController.swift */,
+				D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */,
 				D39399F31C5E815100F5C010 /* Main.storyboard */,
+				D3F7E0311CB07C3400DE194D /* Classes and Structs */,
+				D39E72811CAEC5F9007373DD /* Images */,
 				D39399F61C5E815100F5C010 /* Assets.xcassets */,
 				D39399F81C5E815100F5C010 /* LaunchScreen.storyboard */,
 				D39399FB1C5E815100F5C010 /* Info.plist */,
 			);
+			name = potsApp;
 			path = potsApptest;
 			sourceTree = "<group>";
 		};
-		D3939A031C5E815100F5C010 /* potsApptestTests */ = {
+		D3939A031C5E815100F5C010 /* potsAppTests */ = {
 			isa = PBXGroup;
 			children = (
 				D3939A041C5E815100F5C010 /* potsApptestTests.swift */,
 				D3939A061C5E815100F5C010 /* Info.plist */,
 			);
+			name = potsAppTests;
 			path = potsApptestTests;
 			sourceTree = "<group>";
 		};
-		D3939A0E1C5E815100F5C010 /* potsApptestUITests */ = {
+		D3939A0E1C5E815100F5C010 /* potsAppUITests */ = {
 			isa = PBXGroup;
 			children = (
 				D3939A0F1C5E815100F5C010 /* potsApptestUITests.swift */,
 				D3939A111C5E815100F5C010 /* Info.plist */,
 			);
+			name = potsAppUITests;
 			path = potsApptestUITests;
+			sourceTree = "<group>";
+		};
+		D39E72811CAEC5F9007373DD /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D34FB87D1C826F02009696D2 /* doctor_assistant.png */,
+				D34FB87F1C826F08009696D2 /* doctor_suitecase.png */,
+				D34FB8911C827D0D009696D2 /* user.png */,
+				D34FB8871C8279DB009696D2 /* bell-1.png */,
+				D34FB8891C8279F0009696D2 /* feel_sick.png */,
+				D34FB88F1C827CEE009696D2 /* ktip-1.png */,
+				D34FB88D1C827CDF009696D2 /* ktip.png */,
+				D34FB88B1C827B78009696D2 /* 111140282.jpeg */,
+				D34FB87B1C826D7F009696D2 /* nurse.png */,
+				D34FB8851C8279D1009696D2 /* bell.png */,
+				D34FB8831C8279C6009696D2 /* date.png */,
+				D34FB8811C827950009696D2 /* lightbulb.png */,
+				D3939A1F1C5E87AC00F5C010 /* smaller settings.png */,
+				D34FB8791C8264AE009696D2 /* capsule.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		D3F7E0311CB07C3400DE194D /* Classes and Structs */ = {
+			isa = PBXGroup;
+			children = (
+				D34EACD21CB13A3900571B47 /* POTSreminder.swift */,
+				D34EACD41CB13E8600571B47 /* MedReminder.swift */,
+				D34EACD61CB13F7500571B47 /* Reminder.swift */,
+			);
+			name = "Classes and Structs";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D39399EB1C5E815100F5C010 /* potsApptest */ = {
+		D39399EB1C5E815100F5C010 /* POTSapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3939A141C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsApptest" */;
+			buildConfigurationList = D3939A141C5E815100F5C010 /* Build configuration list for PBXNativeTarget "POTSapp" */;
 			buildPhases = (
 				D39399E81C5E815100F5C010 /* Sources */,
 				D39399E91C5E815100F5C010 /* Frameworks */,
@@ -140,14 +222,14 @@
 			);
 			dependencies = (
 			);
-			name = potsApptest;
+			name = POTSapp;
 			productName = potsApptest;
-			productReference = D39399EC1C5E815100F5C010 /* potsApptest.app */;
+			productReference = D39399EC1C5E815100F5C010 /* POTSapp.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D39399FF1C5E815100F5C010 /* potsApptestTests */ = {
+		D39399FF1C5E815100F5C010 /* potsAppTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3939A171C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsApptestTests" */;
+			buildConfigurationList = D3939A171C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsAppTests" */;
 			buildPhases = (
 				D39399FC1C5E815100F5C010 /* Sources */,
 				D39399FD1C5E815100F5C010 /* Frameworks */,
@@ -158,14 +240,14 @@
 			dependencies = (
 				D3939A021C5E815100F5C010 /* PBXTargetDependency */,
 			);
-			name = potsApptestTests;
+			name = potsAppTests;
 			productName = potsApptestTests;
-			productReference = D3939A001C5E815100F5C010 /* potsApptestTests.xctest */;
+			productReference = D3939A001C5E815100F5C010 /* potsAppTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		D3939A0A1C5E815100F5C010 /* potsApptestUITests */ = {
+		D3939A0A1C5E815100F5C010 /* potsAppUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D3939A1A1C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsApptestUITests" */;
+			buildConfigurationList = D3939A1A1C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsAppUITests" */;
 			buildPhases = (
 				D3939A071C5E815100F5C010 /* Sources */,
 				D3939A081C5E815100F5C010 /* Frameworks */,
@@ -176,9 +258,9 @@
 			dependencies = (
 				D3939A0D1C5E815100F5C010 /* PBXTargetDependency */,
 			);
-			name = potsApptestUITests;
+			name = potsAppUITests;
 			productName = potsApptestUITests;
-			productReference = D3939A0B1C5E815100F5C010 /* potsApptestUITests.xctest */;
+			productReference = D3939A0B1C5E815100F5C010 /* potsAppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -194,6 +276,14 @@
 					D39399EB1C5E815100F5C010 = {
 						CreatedOnToolsVersion = 7.2;
 						DevelopmentTeam = 259NDZS8BU;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					D39399FF1C5E815100F5C010 = {
 						CreatedOnToolsVersion = 7.2;
@@ -207,8 +297,8 @@
 					};
 				};
 			};
-			buildConfigurationList = D39399E71C5E815100F5C010 /* Build configuration list for PBXProject "potsApptest" */;
-			compatibilityVersion = "Xcode 3.2";
+			buildConfigurationList = D39399E71C5E815100F5C010 /* Build configuration list for PBXProject "POTSapp" */;
+			compatibilityVersion = "Xcode 6.3";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -220,9 +310,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D39399EB1C5E815100F5C010 /* potsApptest */,
-				D39399FF1C5E815100F5C010 /* potsApptestTests */,
-				D3939A0A1C5E815100F5C010 /* potsApptestUITests */,
+				D39399EB1C5E815100F5C010 /* POTSapp */,
+				D39399FF1C5E815100F5C010 /* potsAppTests */,
+				D3939A0A1C5E815100F5C010 /* potsAppUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -232,9 +322,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3939A201C5E87AC00F5C010 /* smaller settings.png in Resources */,
+				D34FB8841C8279C6009696D2 /* date.png in Resources */,
+				D34FB8821C827950009696D2 /* lightbulb.png in Resources */,
+				D34FB8901C827CEE009696D2 /* ktip-1.png in Resources */,
 				D39399FA1C5E815100F5C010 /* LaunchScreen.storyboard in Resources */,
+				D34FB87A1C8264AE009696D2 /* capsule.png in Resources */,
+				D34FB87C1C826D7F009696D2 /* nurse.png in Resources */,
+				D34FB8881C8279DB009696D2 /* bell-1.png in Resources */,
 				D39399F71C5E815100F5C010 /* Assets.xcassets in Resources */,
+				D34FB88C1C827B78009696D2 /* 111140282.jpeg in Resources */,
+				D34FB87E1C826F02009696D2 /* doctor_assistant.png in Resources */,
+				D34FB88A1C8279F0009696D2 /* feel_sick.png in Resources */,
+				D34FB88E1C827CDF009696D2 /* ktip.png in Resources */,
 				D39399F51C5E815100F5C010 /* Main.storyboard in Resources */,
+				D34FB8921C827D0D009696D2 /* user.png in Resources */,
+				D34FB8801C826F08009696D2 /* doctor_suitecase.png in Resources */,
+				D34FB8861C8279D1009696D2 /* bell.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +363,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D39399F21C5E815100F5C010 /* ViewController.swift in Sources */,
+				D34EACD51CB13E8600571B47 /* MedReminder.swift in Sources */,
+				D3F7E0241CAFFBCC00DE194D /* MyDetailsViewController.swift in Sources */,
+				D3F7E02E1CB06F5D00DE194D /* medSettingsDetailViewController.swift in Sources */,
+				D3F7E0221CAFFBA900DE194D /* potsRemindersTableViewController.swift in Sources */,
+				D3F7E0261CB050EB00DE194D /* homeViewController.swift in Sources */,
+				D34EACD31CB13A3900571B47 /* POTSreminder.swift in Sources */,
+				D34EACD71CB13F7500571B47 /* Reminder.swift in Sources */,
+				D3F7E02A1CB0552A00DE194D /* medRemindersTableViewController.swift in Sources */,
 				D39399F01C5E815100F5C010 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,12 +396,12 @@
 /* Begin PBXTargetDependency section */
 		D3939A021C5E815100F5C010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D39399EB1C5E815100F5C010 /* potsApptest */;
+			target = D39399EB1C5E815100F5C010 /* POTSapp */;
 			targetProxy = D3939A011C5E815100F5C010 /* PBXContainerItemProxy */;
 		};
 		D3939A0D1C5E815100F5C010 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = D39399EB1C5E815100F5C010 /* potsApptest */;
+			target = D39399EB1C5E815100F5C010 /* POTSapp */;
 			targetProxy = D3939A0C1C5E815100F5C010 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -400,10 +511,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = potsApptest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lexitechsy.potsApptest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LexiTechsy.POTSapp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -411,10 +525,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = potsApptest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.lexitechsy.potsApptest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LexiTechsy.POTSapp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -469,7 +586,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D39399E71C5E815100F5C010 /* Build configuration list for PBXProject "potsApptest" */ = {
+		D39399E71C5E815100F5C010 /* Build configuration list for PBXProject "POTSapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3939A121C5E815100F5C010 /* Debug */,
@@ -478,29 +595,32 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D3939A141C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsApptest" */ = {
+		D3939A141C5E815100F5C010 /* Build configuration list for PBXNativeTarget "POTSapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3939A151C5E815100F5C010 /* Debug */,
 				D3939A161C5E815100F5C010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D3939A171C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsApptestTests" */ = {
+		D3939A171C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsAppTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3939A181C5E815100F5C010 /* Debug */,
 				D3939A191C5E815100F5C010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		D3939A1A1C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsApptestUITests" */ = {
+		D3939A1A1C5E815100F5C010 /* Build configuration list for PBXNativeTarget "potsAppUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D3939A1B1C5E815100F5C010 /* Debug */,
 				D3939A1C1C5E815100F5C010 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
