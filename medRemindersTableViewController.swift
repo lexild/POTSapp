@@ -26,21 +26,21 @@ class medRemindersTableViewController: UITableViewController {
     }
 
 
-        let reminderOptions = [String](reminderSettings.keys)
+        let medicationList = [String](medicationSettings.keys)
         
         override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
             
-            return reminderOptions.count
+            return medicationSettings.count
         }
         
         override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCellWithIdentifier("medReminderCell")! as UITableViewCell
             
-            let cellTitle = reminderOptions[indexPath.row]
+            let cellTitle = medicationList[indexPath.row]
             cell.textLabel?.text = cellTitle
             
-            if reminderSettings[cellTitle]==true
+            if medicationSettings[cellTitle]==true
             {
                 cell.detailTextLabel?.text = "ON"
                 cell.detailTextLabel?.textColor = UIColor.greenColor()

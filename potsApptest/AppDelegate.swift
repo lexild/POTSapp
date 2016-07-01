@@ -8,19 +8,39 @@
 
 import UIKit
 
+let userDefs = NSUserDefaults.standardUserDefaults()
+//NEEDS TO BE A SINGLETON 
+let notificationManager = NotificationManager()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
 
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(application: UIApplication, willFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        let settings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: Set(arrayLiteral: notificationManager.medReminderCategory, notificationManager.potsReminderCategory))
         UIApplication.sharedApplication().registerUserNotificationSettings(settings)
         
         return true
+    }
+    
+    
+    //HANDLES NOTIFICATIONS RECEIVED WHILST APP IS OPEN BY DISPLAYING THE SAME INFORMATION IN AN ALERT.
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        //If app is open when notification reminder due, show in an alert view instead
+        dispatch_async(dispatch_get_main_queue(), {
+            let alertController = UIAlertController(title: notification.alertTitle, message: notification.alertBody, preferredStyle: UIAlertControllerStyle.Alert)
+            alertController.addAction(UIAlertAction(title: "Done", style: UIAlertActionStyle.Default, handler: nil))
+            alertController.addAction(UIAlertAction(title: "Snooze", style: UIAlertActionStyle.Default, handler: {action in self.handleAlertSnooze(notification)}))
+            self.window?.rootViewController?.presentViewController(alertController, animated: true, completion: nil)})
+    }
+    
+    private func handleAlertSnooze(notification: UILocalNotification) {
+        notificationManager.rescheduleNotification(notification, minutes: 5.0)
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -39,23 +59,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        if application.applicationIconBadgeNumber > 0 {
+            application.applicationIconBadgeNumber = 0
+        }
     }
 
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        
     }
 
-    /*func isAppAlreadyLaunchedOnce()->Bool{
-        let defaults = NSUserDefaults.standardUserDefaults()
-        
-        if let isAppAlreadyLaunchedOnce = defaults.stringForKey("isAppAlreadyLaunchedOnce"){
-            print("App already launched")
-            return true
-        }else{
-            defaults.setBool(true, forKey: "isAppAlreadyLaunchedOnce")
-            print("App launched first time")
+    func isFirstLaunch()->Bool{
+        let launchedBefore = userDefs.boolForKey("launchedBefore")
+        if launchedBefore {
+            //not first launch
             return false
+        } else {
+            //is first launch: set launched before Bool from F to T and return true
+            userDefs.setBool(true, forKey: "launchedBefore")
+            return true
         }
-    }*/
-
+    }
 }
+    
+ 
+

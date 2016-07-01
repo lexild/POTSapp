@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TfH-Jh-XLx">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="TfH-Jh-XLx">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -221,32 +221,12 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrR-e1-xrK">
-                                <rect key="frame" x="219" y="151" width="163" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="83" id="GDd-Ip-aOW" userLabel="height = 70"/>
-                                    <constraint firstAttribute="width" constant="163" id="ui9-f0-lPQ" userLabel="width = 100"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="481271400.18943202">
-                                    <!--2016-04-02 06:30:00 +0000-->
-                                </date>
-                            </datePicker>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Usual bed time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Qt-3k-FUb">
                                 <rect key="frame" x="20" y="252" width="114" height="20"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-cO-a3x">
-                                <rect key="frame" x="219" y="286" width="163" height="83"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="163" id="vcb-00-8fk" userLabel="width = 100"/>
-                                    <constraint firstAttribute="height" constant="83" id="wDs-Jn-ypa" userLabel="height = 70"/>
-                                </constraints>
-                                <date key="date" timeIntervalSinceReferenceDate="481323600.23479003">
-                                    <!--2016-04-02 21:00:00 +0000-->
-                                </date>
-                            </datePicker>
                             <segmentedControl opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="dsA-s2-OW5">
                                 <rect key="frame" x="187" y="52" width="226" height="29"/>
                                 <constraints>
@@ -260,6 +240,26 @@
                                 </segments>
                                 <color key="tintColor" red="0.32747813892668082" green="0.70129352807998657" blue="0.22440605940214595" alpha="1" colorSpace="calibratedRGB"/>
                             </segmentedControl>
+                            <datePicker contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KrR-e1-xrK">
+                                <rect key="frame" x="219" y="151" width="163" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="83" id="GDd-Ip-aOW" userLabel="height = 70"/>
+                                    <constraint firstAttribute="width" constant="163" id="ui9-f0-lPQ" userLabel="width = 100"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="481271400.18943202">
+                                    <!--2016-04-02 06:30:00 +0000-->
+                                </date>
+                            </datePicker>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6X-cO-a3x">
+                                <rect key="frame" x="219" y="286" width="163" height="83"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="vcb-00-8fk" userLabel="width = 100"/>
+                                    <constraint firstAttribute="height" constant="83" id="wDs-Jn-ypa" userLabel="height = 70"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="481323600.23479003">
+                                    <!--2016-04-02 21:00:00 +0000-->
+                                </date>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -278,6 +278,11 @@
                             <constraint firstItem="6Qt-3k-FUb" firstAttribute="top" secondItem="Kzr-GH-bdp" secondAttribute="bottom" constant="111" id="zex-hc-VAD"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="bedTimePicker" destination="K6X-cO-a3x" id="kSB-2E-ufk"/>
+                        <outlet property="genderSelection" destination="dsA-s2-OW5" id="OZ1-FX-xPe"/>
+                        <outlet property="wakeUpTimePicker" destination="KrR-e1-xrK" id="lUl-e8-wwv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hJb-XC-Xs6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,9 +358,6 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qz-cv-Qy4">
-                                <rect key="frame" x="90" y="23" width="51" height="31"/>
-                            </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="At bedtime" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4f-RP-XH4">
                                 <rect key="frame" x="87" y="87" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -428,6 +430,9 @@
                                     <segue destination="D47-cW-htM" kind="show" id="aCs-Mj-d0H"/>
                                 </connections>
                             </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qz-cv-Qy4">
+                                <rect key="frame" x="90" y="23" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -463,7 +468,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97u-17-ADL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="-1332"/>
+            <point key="canvasLocation" x="1608" y="-1275"/>
         </scene>
         <!--navigationController-->
         <scene sceneID="5up-Kx-bO3">
@@ -494,10 +499,10 @@
             </objects>
             <point key="canvasLocation" x="-457" y="-348"/>
         </scene>
-        <!--Medication Reminders-->
+        <!--POTS Reminders-->
         <scene sceneID="tC5-ch-Vrw">
             <objects>
-                <tableViewController title="Medication Reminders" id="W8r-A1-LTa" customClass="potsRemindersTableViewController" customModule="POTSapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="POTS Reminders" id="W8r-A1-LTa" customClass="potsRemindersTableViewController" customModule="POTSapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="k8L-id-08D">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

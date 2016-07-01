@@ -11,33 +11,46 @@ import UIKit
 
 class MyDetailsViewController: UIViewController {
 
-    @IBOutlet weak var genderSelection: UISegmentedControl!
+    @IBOutlet var genderSelection: UISegmentedControl!
+
+    @IBOutlet var wakeUpTimePicker: UIDatePicker!
+
+    @IBOutlet var bedTimePicker: UIDatePicker!
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        
+        /* loads NSUD values unless first run */
+        if userDefs.objectForKey("wake") != nil {
+            wakeUpTimePicker.setDate(userDefs.objectForKey("wake") as! NSDate, animated: true)}
+        if userDefs.objectForKey("bed") != nil {
+            bedTimePicker.setDate(userDefs.objectForKey("bed") as! NSDate, animated: true)}
+        if userDefs.objectForKey("gender") != nil {
+            genderSelection.selectedSegmentIndex = userDefs.objectForKey("gender") as! Int}
     }
-    @IBOutlet weak var bedTimePicker: UIDatePicker!
     
-    @IBOutlet weak var wakeUpTimePicker: UIDatePicker!
+
+    /* saves values to NSUD when leave screen */
+    override func viewWillDisappear(animated: Bool) {
+        let wakeTime = wakeUpTimePicker.date
+        userDefs.setObject(wakeTime, forKey:"wake")
+        
+        let bedTime = bedTimePicker.date
+        userDefs.setObject(bedTime, forKey:"bed")
+        
+        let gender = genderSelection.selectedSegmentIndex
+        userDefs.setObject(gender, forKey: "gender")
+        
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
 
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

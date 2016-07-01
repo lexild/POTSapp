@@ -15,6 +15,7 @@ class homeViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
     }
     
     func scheduleLocalNotification() {
@@ -24,20 +25,14 @@ class homeViewController: UIViewController {
   
     @IBAction func PRButtonPressed(sender: AnyObject) {
         print("pressed")
-        // Create reminder by setting a local notification
-        let localNotification = UILocalNotification() // Creating an instance of the notification.
-        localNotification.alertTitle = "Notification Title"
-        localNotification.alertBody = "Alert body to provide more details"
-        localNotification.alertAction = "ShowDetails"
-        localNotification.fireDate = NSDate().dateByAddingTimeInterval(5) // 5 minutes(60 sec * 5) from now
-        localNotification.timeZone = NSTimeZone.defaultTimeZone()
-        localNotification.soundName = UILocalNotificationDefaultSoundName // Use the default notification tone/ specify a file in the application bundle
-        localNotification.applicationIconBadgeNumber = 1 // Badge number to set on the application Icon.
-        localNotification.category = "reminderCategory" // Category to use the specified actions
-        UIApplication.sharedApplication().scheduleLocalNotification(localNotification) // Scheduling the notification.
-        print("alert created")
+        // Creates reminder by setting a local notification
+        
+        //TO DO notificationManager.createNotification(title (diff for pots or med), fireTime... etc).
+        
+        notificationManager.createNotification(NotificationManager.ReminderType.med, title: "Midodrine", fireDate: NSDate().dateByAddingTimeInterval(5))
+        notificationManager.createNotification(NotificationManager.ReminderType.pots, title: "drink up!", fireDate: NSDate().dateByAddingTimeInterval(15))
+        //dismiss options?
     }
-    
     
     
     
