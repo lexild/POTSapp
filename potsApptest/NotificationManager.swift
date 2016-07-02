@@ -46,6 +46,22 @@ class NotificationManager {
         print("alert created")
     }
     
+    func createNotification(type :ReminderType, title: String, body: String, fireDate :NSDate) {
+        let notification = UILocalNotification()
+        notification.alertTitle = title
+        notification.alertBody = body
+        if (type == ReminderType.med) {
+            notification.category = "medReminderCategory"
+        } else {
+            notification.category = "potsReminderCategory"
+        }
+        notification.alertAction = "ShowDetails"
+        notification.fireDate = fireDate
+        notification.timeZone = NSTimeZone.defaultTimeZone()
+        notification.soundName = UILocalNotificationDefaultSoundName
+        UIApplication.sharedApplication().scheduleLocalNotification(notification) // Scheduling the notification.
+        print("alert created")
+    }
     
     //is this required?
     func deleteNotification(){

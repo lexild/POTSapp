@@ -31,6 +31,7 @@
 		D3939A051C5E815100F5C010 /* potsApptestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3939A041C5E815100F5C010 /* potsApptestTests.swift */; };
 		D3939A101C5E815100F5C010 /* potsApptestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3939A0F1C5E815100F5C010 /* potsApptestUITests.swift */; };
 		D3939A201C5E87AC00F5C010 /* smaller settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D3939A1F1C5E87AC00F5C010 /* smaller settings.png */; };
+		D3D363441D27F82C00266FEC /* PostureUpdatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D363431D27F82C00266FEC /* PostureUpdatesManager.swift */; };
 		D3F7E0221CAFFBA900DE194D /* potsRemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */; };
 		D3F7E0241CAFFBCC00DE194D /* MyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */; };
 		D3F7E0261CB050EB00DE194D /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0251CB050EB00DE194D /* homeViewController.swift */; };
@@ -86,6 +87,7 @@
 		D3939A0F1C5E815100F5C010 /* potsApptestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = potsApptestUITests.swift; sourceTree = "<group>"; };
 		D3939A111C5E815100F5C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3939A1F1C5E87AC00F5C010 /* smaller settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smaller settings.png"; sourceTree = "<group>"; };
+		D3D363431D27F82C00266FEC /* PostureUpdatesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostureUpdatesManager.swift; sourceTree = "<group>"; };
 		D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = potsRemindersTableViewController.swift; sourceTree = "<group>"; };
 		D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailsViewController.swift; sourceTree = "<group>"; };
 		D3F7E0251CB050EB00DE194D /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				D34F33D91D269262005CA155 /* NotificationManager.swift */,
+				D3D363431D27F82C00266FEC /* PostureUpdatesManager.swift */,
 				D34EACD21CB13A3900571B47 /* POTSreminder.swift */,
 				D34EACD41CB13E8600571B47 /* MedReminder.swift */,
 				D34EACD61CB13F7500571B47 /* Reminder.swift */,
@@ -366,6 +369,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D363441D27F82C00266FEC /* PostureUpdatesManager.swift in Sources */,
 				D34EACD51CB13E8600571B47 /* MedReminder.swift in Sources */,
 				D3F7E0241CAFFBCC00DE194D /* MyDetailsViewController.swift in Sources */,
 				D3F7E02E1CB06F5D00DE194D /* medSettingsDetailViewController.swift in Sources */,

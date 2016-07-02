@@ -11,6 +11,7 @@ import UIKit
 let userDefs = NSUserDefaults.standardUserDefaults()
 //NEEDS TO BE A SINGLETON 
 let notificationManager = NotificationManager()
+let postureUpdatesManager = PostureUpdatesManager()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

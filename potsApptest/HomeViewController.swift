@@ -11,10 +11,15 @@ import UIKit
 class homeViewController: UIViewController {
 
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        postureUpdatesManager.start()
+        print("start() sent")
         
     }
     
@@ -27,7 +32,6 @@ class homeViewController: UIViewController {
         print("pressed")
         // Creates reminder by setting a local notification
         
-        //TO DO notificationManager.createNotification(title (diff for pots or med), fireTime... etc).
         
         notificationManager.createNotification(NotificationManager.ReminderType.med, title: "Midodrine", fireDate: NSDate().dateByAddingTimeInterval(5))
         notificationManager.createNotification(NotificationManager.ReminderType.pots, title: "drink up!", fireDate: NSDate().dateByAddingTimeInterval(15))
