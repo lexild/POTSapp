@@ -10,6 +10,8 @@ import UIKit
 
 class NotificationManager {
     
+    static let notificationManagerSingleton = NotificationManager()
+    
     let reminderActionComplete = UIMutableUserNotificationAction()
     let reminderActionSnooze = UIMutableUserNotificationAction()
     let potsReminderCategory = UIMutableUserNotificationCategory()
@@ -19,7 +21,7 @@ class NotificationManager {
     
     enum ReminderType { case pots, med }
     
-    init() {
+    private init() {
         notificationActionCreatorHelper()
     }
     
@@ -108,9 +110,4 @@ class NotificationManager {
         
         
     }
-
-    
-    
-    
-
 }

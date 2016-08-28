@@ -7,8 +7,10 @@
 //
 
 import UIKit
+import CoreData
 
-var medicationSettings:[String:Bool] = ["Ivabradine":true, "Midodrine":true, "Test":false]
+var medications = [NSManagedObject]()
+//var medicationSettings:[String:Bool] = ["Ivabradine":true, "Midodrine":true, "Test":false]
 //TODO this needs to be changed as on/off won't be visible here, instead would be probably a subtitle saying what the current
 // settings are. Also this is likely to change to a class anyway rather than a list.
 
@@ -26,21 +28,23 @@ class medRemindersTableViewController: UITableViewController {
     }
 
 
-        let medicationList = [String](medicationSettings.keys)
+        
         
         override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
             
-            return medicationSettings.count
+            return medications.count
         }
         
         override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
             
             let cell = tableView.dequeueReusableCellWithIdentifier("medReminderCell")! as UITableViewCell
             
-            let cellTitle = medicationList[indexPath.row]
-            cell.textLabel?.text = cellTitle
             
-            if medicationSettings[cellTitle]==true
+            let medication = medications[indexPath.row]
+            
+            cell.textLabel?.text = medication.valueForKey("name") as? String
+            
+            if (medication.valueForKey("remindersActivated") as? Bool)!==true
             {
                 cell.detailTextLabel?.text = "ON"
                 cell.detailTextLabel?.textColor = UIColor.greenColor()
@@ -50,11 +54,6 @@ class medRemindersTableViewController: UITableViewController {
                 cell.detailTextLabel?.text = "OFF"
                 cell.detailTextLabel?.textColor = UIColor.redColor()
             }
-            
-            
-            // Can be used to insert image into row... TODO... see http://www.ioscreator.com/tutorials/prototype-cells-tableview-tutorial-ios8-swift
-            //var imageName = UIImage(named: [indexPath.row])
-            //cell.imageView?.image = imageName
             
             return cell
         }

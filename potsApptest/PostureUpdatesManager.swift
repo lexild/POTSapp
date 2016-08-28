@@ -9,13 +9,19 @@
 import UIKit
 import CoreMotion
 
-class PostureUpdatesManager {
+class PostureUpdatesManager :NSObject {
+    
+    static let postureUpdatesSingleton = PostureUpdatesManager()
     
     var timer = NSTimer()
     var latestPosture :String = ""
     let motionManager = CMMotionManager()
     let dataProcessingQueue = NSOperationQueue.mainQueue()
     
+    
+    private override init() {
+        super.init()
+    }
 
     func start() {
         print("starting motion updates")
@@ -69,23 +75,26 @@ class PostureUpdatesManager {
     // but this is ok for now?
     // TODO needs to be neatened up
     func receiveLatestPosture(newPosture :String) {
+        
         if newPosture == latestPosture {
             // do nothing - keep current timer running
             //DOUBLE CHECK STRING COMPARISON IN SWIFT
             print("same posture")
+            
         } else if newPosture == "Standing" {
             //stop current timer and set new timer for 2 mins
             latestPosture = newPosture
             timer.invalidate()
-            timer = NSTimer.scheduledTimerWithTimeInterval(2*60, target: PostureUpdatesManager.self, selector: #selector(notify), userInfo: newPosture, repeats: false)
+            //SEND A SIT DOWN NOTIFICATION/CALF P ETC.
+            timer = NSTimer.scheduledTimerWithTimeInterval(2*60, target: self, selector: #selector(notify), userInfo: newPosture, repeats: false)
             print("first posture")
-            //timer = NSTimer.scheduledTimerWithTimeInterval(2, invocation: self.notify(newPosture), repeats: false)
-            //TODO: SEND A SIT DOWN NOTIFICATION/CALF P ETC.
+            
         } else if newPosture == "Sitting" {
             latestPosture = newPosture
             timer.invalidate()
-            timer = NSTimer.scheduledTimerWithTimeInterval(30*60, target: PostureUpdatesManager.self, selector: #selector(notify), userInfo: newPosture, repeats: false)
-            //TODO: SEND A LIE DOWN/CALF P ETC NOTIFICATION
+            //SEND A LIE DOWN/CALF P ETC NOTIFICATION
+            timer = NSTimer.scheduledTimerWithTimeInterval(30*60, target: self, selector: #selector(notify), userInfo: newPosture, repeats: false)
+            
         } else if newPosture == "Lying down" {
             //then no timer/notifications required, so invalidate
             latestPosture = newPosture
@@ -94,8 +103,11 @@ class PostureUpdatesManager {
         
     }
     
-    @objc func notify(posture :String) {
+
+    
+    func notify(timer:NSTimer) {
         //forward to Notification Manager
+        let posture = timer.userInfo as! String
         if posture == "Standing" {
             notificationManager.createNotification(NotificationManager.ReminderType.pots,
                                                    title: "You have been standing for two minutes!",
@@ -112,3 +124,4 @@ class PostureUpdatesManager {
 
 
 }
+

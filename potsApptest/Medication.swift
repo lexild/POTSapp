@@ -8,10 +8,12 @@
 
 import UIKit
 
-class medReminder: Reminder {
+class Medication: Reminder {
     var dose:Double = 0.0
     var atTimes:Bool = false
     var timesList:Array<NSDate> = []
     
 
 }
+916737463
+pmpzrrkja
