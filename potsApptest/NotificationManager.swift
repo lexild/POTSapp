@@ -65,6 +65,27 @@ class NotificationManager {
         print("alert created")
     }
     
+    //creates all relevant reminders for current settings for particular medicine (medicine indicated by 'name')
+    func manageNotificationsForMedicine(name: String, allRemindersOn: Bool, atBedtime: Bool, atWakeUp: Bool, atFrequency: Bool, atTimes: Bool, timeList: NSSet, frequency: NSDate){
+        
+    }
+    
+    func manageBedtimeReminders(name :String){
+        createNotification(ReminderType.med, title: name, fireDate: userDefs.objectForKey("wake") as! NSDate)
+    }
+    
+    func manageWakeTimeReminders(name: String){
+        createNotification(ReminderType.med, title: name, fireDate: userDefs.objectForKey("bed") as! NSDate)
+    }
+    
+    func manageFrequencyReminders(name: String, frequency: NSDate){
+        
+    }
+    
+    func manageAtTimeReminders(name: String, timesList: NSSet) {
+        
+    }
+    
     //is this required?
     func deleteNotification(){
         
@@ -104,10 +125,7 @@ class NotificationManager {
         medReminderCategory.identifier = "medReminderCategory"
         medReminderCategory.setActions([reminderActionComplete, reminderActionSnooze], forContext: UIUserNotificationActionContext.Default)
         medReminderCategory.setActions([reminderActionComplete, reminderActionSnooze], forContext: UIUserNotificationActionContext.Minimal)
-        
-        
-        
-        
+ 
         
     }
 }

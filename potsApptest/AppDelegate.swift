@@ -73,7 +73,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.saveContext()
     }
 
-    func isFirstLaunch()->Bool{
+    /*func isFirstLaunch()->Bool{
         let launchedBefore = userDefs.boolForKey("launchedBefore")
         if launchedBefore {
             //not first launch
@@ -83,7 +83,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             userDefs.setBool(true, forKey: "launchedBefore")
             return true
         }
-    }
+    }*/
     
     // MARK: - Core Data stack
     

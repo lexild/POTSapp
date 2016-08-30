@@ -48,11 +48,6 @@ class potsRemindersTableViewController: UITableViewController {
             cell.detailTextLabel?.textColor = UIColor.redColor()
         }
         
-        
-        // Can be used to insert image into row... TODO... see http://www.ioscreator.com/tutorials/prototype-cells-tableview-tutorial-ios8-swift
-        //var imageName = UIImage(named: [indexPath.row])
-        //cell.imageView?.image = imageName
-        
         return cell
     }
     

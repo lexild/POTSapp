@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D34EACD31CB13A3900571B47 /* POTSreminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EACD21CB13A3900571B47 /* POTSreminder.swift */; };
-		D34EACD51CB13E8600571B47 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EACD41CB13E8600571B47 /* Medication.swift */; };
-		D34EACD71CB13F7500571B47 /* Reminder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34EACD61CB13F7500571B47 /* Reminder.swift */; };
 		D34F33DA1D269262005CA155 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34F33D91D269262005CA155 /* NotificationManager.swift */; };
 		D34FB87A1C8264AE009696D2 /* capsule.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8791C8264AE009696D2 /* capsule.png */; };
 		D34FB87C1C826D7F009696D2 /* nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB87B1C826D7F009696D2 /* nurse.png */; };
@@ -24,6 +21,7 @@
 		D34FB88E1C827CDF009696D2 /* ktip.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB88D1C827CDF009696D2 /* ktip.png */; };
 		D34FB8901C827CEE009696D2 /* ktip-1.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB88F1C827CEE009696D2 /* ktip-1.png */; };
 		D34FB8921C827D0D009696D2 /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8911C827D0D009696D2 /* user.png */; };
+		D3562E951D744E49009E2B52 /* setUpMedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3562E941D744E49009E2B52 /* setUpMedViewController.swift */; };
 		D37C96811D739CD200900223 /* CDModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D37C967F1D739CD100900223 /* CDModel.xcdatamodeld */; };
 		D39399F01C5E815100F5C010 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39399EF1C5E815100F5C010 /* AppDelegate.swift */; };
 		D39399F51C5E815100F5C010 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39399F31C5E815100F5C010 /* Main.storyboard */; };
@@ -58,9 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D34EACD21CB13A3900571B47 /* POTSreminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = POTSreminder.swift; sourceTree = "<group>"; };
-		D34EACD41CB13E8600571B47 /* Medication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
-		D34EACD61CB13F7500571B47 /* Reminder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reminder.swift; sourceTree = "<group>"; };
 		D34F33D91D269262005CA155 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		D34FB8791C8264AE009696D2 /* capsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capsule.png; sourceTree = "<group>"; };
 		D34FB87B1C826D7F009696D2 /* nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse.png; sourceTree = "<group>"; };
@@ -75,6 +70,7 @@
 		D34FB88D1C827CDF009696D2 /* ktip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ktip.png; sourceTree = "<group>"; };
 		D34FB88F1C827CEE009696D2 /* ktip-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ktip-1.png"; sourceTree = "<group>"; };
 		D34FB8911C827D0D009696D2 /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
+		D3562E941D744E49009E2B52 /* setUpMedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = setUpMedViewController.swift; sourceTree = "<group>"; };
 		D37C96801D739CD200900223 /* CDModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CDModel.xcdatamodel; sourceTree = "<group>"; };
 		D39399EC1C5E815100F5C010 /* POTSapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = POTSapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D39399EF1C5E815100F5C010 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -145,12 +141,14 @@
 		D39399EE1C5E815100F5C010 /* potsApp */ = {
 			isa = PBXGroup;
 			children = (
+				D39E72811CAEC5F9007373DD /* Images */,
 				D39399EF1C5E815100F5C010 /* AppDelegate.swift */,
 				D37C967F1D739CD100900223 /* CDModel.xcdatamodeld */,
 				D3F7E0251CB050EB00DE194D /* homeViewController.swift */,
 				D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */,
 				D3F7E02D1CB06F5D00DE194D /* medSettingsDetailViewController.swift */,
 				D3F7E0291CB0552A00DE194D /* medRemindersTableViewController.swift */,
+				D3562E941D744E49009E2B52 /* setUpMedViewController.swift */,
 				D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */,
 				D39399F31C5E815100F5C010 /* Main.storyboard */,
 				D3F7E0311CB07C3400DE194D /* Classes and Structs */,
@@ -208,10 +206,6 @@
 			children = (
 				D34F33D91D269262005CA155 /* NotificationManager.swift */,
 				D3D363431D27F82C00266FEC /* PostureUpdatesManager.swift */,
-				D34EACD21CB13A3900571B47 /* POTSreminder.swift */,
-				D34EACD41CB13E8600571B47 /* Medication.swift */,
-				D34EACD61CB13F7500571B47 /* Reminder.swift */,
-				D39E72811CAEC5F9007373DD /* Images */,
 			);
 			name = "Classes and Structs";
 			sourceTree = "<group>";
@@ -373,14 +367,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3D363441D27F82C00266FEC /* PostureUpdatesManager.swift in Sources */,
-				D34EACD51CB13E8600571B47 /* Medication.swift in Sources */,
 				D3F7E0241CAFFBCC00DE194D /* MyDetailsViewController.swift in Sources */,
 				D3F7E02E1CB06F5D00DE194D /* medSettingsDetailViewController.swift in Sources */,
 				D37C96811D739CD200900223 /* CDModel.xcdatamodeld in Sources */,
 				D3F7E0221CAFFBA900DE194D /* potsRemindersTableViewController.swift in Sources */,
+				D3562E951D744E49009E2B52 /* setUpMedViewController.swift in Sources */,
 				D3F7E0261CB050EB00DE194D /* homeViewController.swift in Sources */,
-				D34EACD31CB13A3900571B47 /* POTSreminder.swift in Sources */,
-				D34EACD71CB13F7500571B47 /* Reminder.swift in Sources */,
 				D3F7E02A1CB0552A00DE194D /* medRemindersTableViewController.swift in Sources */,
 				D39399F01C5E815100F5C010 /* AppDelegate.swift in Sources */,
 				D34F33DA1D269262005CA155 /* NotificationManager.swift in Sources */,

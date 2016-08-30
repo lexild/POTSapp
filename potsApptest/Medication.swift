@@ -15,5 +15,3 @@ class Medication: Reminder {
     
 
 }
-916737463
-pmpzrrkja

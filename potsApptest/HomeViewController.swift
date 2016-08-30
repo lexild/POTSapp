@@ -39,6 +39,13 @@ class homeViewController: UIViewController {
     }
     
     
+    @IBAction func infoButtonPressed(sender: AnyObject) {
+        let alertController = UIAlertController(title: "Record Event",
+            message: "Use this function to record episodes when your symptoms are at their worst (e.g. a faint or severe tachycardia) and the triggers which may have caused symptoms to worsen.",
+            preferredStyle: UIAlertControllerStyle.Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        presentViewController(alertController, animated: true, completion: nil)
+    }
     
 
     override func didReceiveMemoryWarning() {
