@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Xcode 7.0">
     <entity name="Event" syncable="YES">
+        <attribute name="symptoms" optional="YES" attributeType="Transformable" syncable="YES"/>
         <attribute name="timeDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="triggers" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
@@ -16,7 +17,7 @@
         <attribute name="timesList" optional="YES" attributeType="Transformable" syncable="YES"/>
     </entity>
     <elements>
+        <element name="Event" positionX="-63" positionY="54" width="128" height="90"/>
         <element name="Medicine" positionX="-63" positionY="-18" width="128" height="180"/>
-        <element name="Event" positionX="-63" positionY="54" width="128" height="75"/>
     </elements>
 </model>

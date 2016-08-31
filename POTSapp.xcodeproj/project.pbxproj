@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30315F41D7735DE00D99387 /* symptomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30315F31D7735DE00D99387 /* symptomsViewController.swift */; };
+		D30315F61D7741C100D99387 /* triggersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30315F51D7741C100D99387 /* triggersViewController.swift */; };
 		D34F33DA1D269262005CA155 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34F33D91D269262005CA155 /* NotificationManager.swift */; };
 		D34FB87A1C8264AE009696D2 /* capsule.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB8791C8264AE009696D2 /* capsule.png */; };
 		D34FB87C1C826D7F009696D2 /* nurse.png in Resources */ = {isa = PBXBuildFile; fileRef = D34FB87B1C826D7F009696D2 /* nurse.png */; };
@@ -31,6 +33,7 @@
 		D3939A101C5E815100F5C010 /* potsApptestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3939A0F1C5E815100F5C010 /* potsApptestUITests.swift */; };
 		D3939A201C5E87AC00F5C010 /* smaller settings.png in Resources */ = {isa = PBXBuildFile; fileRef = D3939A1F1C5E87AC00F5C010 /* smaller settings.png */; };
 		D3D363441D27F82C00266FEC /* PostureUpdatesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D363431D27F82C00266FEC /* PostureUpdatesManager.swift */; };
+		D3EFE3031D75F95B003E0EA3 /* RecordEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EFE3021D75F95B003E0EA3 /* RecordEventViewController.swift */; };
 		D3F7E0221CAFFBA900DE194D /* potsRemindersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */; };
 		D3F7E0241CAFFBCC00DE194D /* MyDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */; };
 		D3F7E0261CB050EB00DE194D /* homeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F7E0251CB050EB00DE194D /* homeViewController.swift */; };
@@ -56,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D30315F31D7735DE00D99387 /* symptomsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = symptomsViewController.swift; sourceTree = "<group>"; };
+		D30315F51D7741C100D99387 /* triggersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = triggersViewController.swift; path = ../triggersViewController.swift; sourceTree = "<group>"; };
 		D34F33D91D269262005CA155 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
 		D34FB8791C8264AE009696D2 /* capsule.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = capsule.png; sourceTree = "<group>"; };
 		D34FB87B1C826D7F009696D2 /* nurse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nurse.png; sourceTree = "<group>"; };
@@ -86,6 +91,7 @@
 		D3939A111C5E815100F5C010 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3939A1F1C5E87AC00F5C010 /* smaller settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "smaller settings.png"; sourceTree = "<group>"; };
 		D3D363431D27F82C00266FEC /* PostureUpdatesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostureUpdatesManager.swift; sourceTree = "<group>"; };
+		D3EFE3021D75F95B003E0EA3 /* RecordEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordEventViewController.swift; sourceTree = "<group>"; };
 		D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = potsRemindersTableViewController.swift; sourceTree = "<group>"; };
 		D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyDetailsViewController.swift; sourceTree = "<group>"; };
 		D3F7E0251CB050EB00DE194D /* homeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = homeViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				D39399EE1C5E815100F5C010 /* potsApp */,
+				D39E72811CAEC5F9007373DD /* Images */,
 				D3939A031C5E815100F5C010 /* potsAppTests */,
 				D3939A0E1C5E815100F5C010 /* potsAppUITests */,
 				D39399ED1C5E815100F5C010 /* Products */,
@@ -141,17 +148,15 @@
 		D39399EE1C5E815100F5C010 /* potsApp */ = {
 			isa = PBXGroup;
 			children = (
-				D39E72811CAEC5F9007373DD /* Images */,
+				D39399F31C5E815100F5C010 /* Main.storyboard */,
 				D39399EF1C5E815100F5C010 /* AppDelegate.swift */,
 				D37C967F1D739CD100900223 /* CDModel.xcdatamodeld */,
 				D3F7E0251CB050EB00DE194D /* homeViewController.swift */,
-				D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */,
-				D3F7E02D1CB06F5D00DE194D /* medSettingsDetailViewController.swift */,
-				D3F7E0291CB0552A00DE194D /* medRemindersTableViewController.swift */,
-				D3562E941D744E49009E2B52 /* setUpMedViewController.swift */,
-				D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */,
-				D39399F31C5E815100F5C010 /* Main.storyboard */,
-				D3F7E0311CB07C3400DE194D /* Classes and Structs */,
+				D3EFE3051D75F995003E0EA3 /* My Details */,
+				D3EFE3041D75F976003E0EA3 /* Med Reminders */,
+				D3EFE3071D75F9C0003E0EA3 /* Pots Reminders */,
+				D3EFE3061D75F9A4003E0EA3 /* Record Event */,
+				D3F7E0311CB07C3400DE194D /* Model Classes */,
 				D39399F61C5E815100F5C010 /* Assets.xcassets */,
 				D39399F81C5E815100F5C010 /* LaunchScreen.storyboard */,
 				D39399FB1C5E815100F5C010 /* Info.plist */,
@@ -199,15 +204,52 @@
 				D34FB8791C8264AE009696D2 /* capsule.png */,
 			);
 			name = Images;
+			path = potsApptest;
 			sourceTree = "<group>";
 		};
-		D3F7E0311CB07C3400DE194D /* Classes and Structs */ = {
+		D3EFE3041D75F976003E0EA3 /* Med Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				D3F7E0291CB0552A00DE194D /* medRemindersTableViewController.swift */,
+				D3562E941D744E49009E2B52 /* setUpMedViewController.swift */,
+				D3F7E02D1CB06F5D00DE194D /* medSettingsDetailViewController.swift */,
+			);
+			name = "Med Reminders";
+			sourceTree = "<group>";
+		};
+		D3EFE3051D75F995003E0EA3 /* My Details */ = {
+			isa = PBXGroup;
+			children = (
+				D3F7E0231CAFFBCC00DE194D /* MyDetailsViewController.swift */,
+			);
+			name = "My Details";
+			sourceTree = "<group>";
+		};
+		D3EFE3061D75F9A4003E0EA3 /* Record Event */ = {
+			isa = PBXGroup;
+			children = (
+				D3EFE3021D75F95B003E0EA3 /* RecordEventViewController.swift */,
+				D30315F51D7741C100D99387 /* triggersViewController.swift */,
+				D30315F31D7735DE00D99387 /* symptomsViewController.swift */,
+			);
+			name = "Record Event";
+			sourceTree = "<group>";
+		};
+		D3EFE3071D75F9C0003E0EA3 /* Pots Reminders */ = {
+			isa = PBXGroup;
+			children = (
+				D3F7E0211CAFFBA900DE194D /* potsRemindersTableViewController.swift */,
+			);
+			name = "Pots Reminders";
+			sourceTree = "<group>";
+		};
+		D3F7E0311CB07C3400DE194D /* Model Classes */ = {
 			isa = PBXGroup;
 			children = (
 				D34F33D91D269262005CA155 /* NotificationManager.swift */,
 				D3D363431D27F82C00266FEC /* PostureUpdatesManager.swift */,
 			);
-			name = "Classes and Structs";
+			name = "Model Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -371,9 +413,12 @@
 				D3F7E02E1CB06F5D00DE194D /* medSettingsDetailViewController.swift in Sources */,
 				D37C96811D739CD200900223 /* CDModel.xcdatamodeld in Sources */,
 				D3F7E0221CAFFBA900DE194D /* potsRemindersTableViewController.swift in Sources */,
+				D30315F61D7741C100D99387 /* triggersViewController.swift in Sources */,
 				D3562E951D744E49009E2B52 /* setUpMedViewController.swift in Sources */,
 				D3F7E0261CB050EB00DE194D /* homeViewController.swift in Sources */,
+				D3EFE3031D75F95B003E0EA3 /* RecordEventViewController.swift in Sources */,
 				D3F7E02A1CB0552A00DE194D /* medRemindersTableViewController.swift in Sources */,
+				D30315F41D7735DE00D99387 /* symptomsViewController.swift in Sources */,
 				D39399F01C5E815100F5C010 /* AppDelegate.swift in Sources */,
 				D34F33DA1D269262005CA155 /* NotificationManager.swift in Sources */,
 			);

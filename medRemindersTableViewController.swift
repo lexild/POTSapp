@@ -14,8 +14,6 @@ var medications = [NSManagedObject]()
 
 class medRemindersTableViewController: UITableViewController {
     
-    //var selectedMed: NSManagedObject?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
