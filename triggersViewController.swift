@@ -41,8 +41,6 @@ class triggersViewController: UIViewController {
         event.setValue(eventDate, forKey: "timeDate")
         event.setValue(symptoms, forKey: "symptoms")
         event.setValue(selectedTriggers, forKey: "triggers")
-
-        
         
         do {
             try managedContext.save()
@@ -50,11 +48,8 @@ class triggersViewController: UIViewController {
         } catch let error as NSError  {
             print("Could not save \(error), \(error.userInfo)")
         }
-
         
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,25 +58,39 @@ class triggersViewController: UIViewController {
         self.triggersTableView.allowsMultipleSelection = true
     }
     
+    
+    
     func getSelectedTriggers() {
-        let selectedCells = self.triggersTableView.indexPathsForSelectedRows!
+        var selectedCells = [NSIndexPath]()
+       
         
-        for indexPath in selectedCells {
-            let cellToBeAdded = triggersTableView.cellForRowAtIndexPath(indexPath)! as UITableViewCell
-            let trigger :String = (cellToBeAdded.textLabel?.text)!
-            print(trigger)
-            selectedTriggers.append(trigger)
+        if selectedCells.isEmpty{
+            // Allows user not to select anything - change to notification prompting selection
+            selectedTriggers.append(" ")
+        } else {
+            selectedCells = self.triggersTableView.indexPathsForSelectedRows!
+            
+            for indexPath in selectedCells {
+                let cellToBeAdded = triggersTableView.cellForRowAtIndexPath(indexPath)! as UITableViewCell
+                let trigger :String = (cellToBeAdded.textLabel?.text)!
+                print(trigger)
+                selectedTriggers.append(trigger)
+            }
         }
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return triggersArray.count
     }
+    
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("multiSelectCell", forIndexPath: indexPath)
@@ -89,17 +98,19 @@ class triggersViewController: UIViewController {
         cell.textLabel?.text = triggersArray[indexPath.row]
         cell.accessoryView?.backgroundColor = UIColor.redColor()
         
-        
         return cell
     }
+    
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         triggersTableView.cellForRowAtIndexPath(indexPath)?.accessoryType = UITableViewCellAccessoryType.Checkmark
     }
     
+    
     func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.cellForRowAtIndexPath(indexPath)?.accessoryType = UITableViewCellAccessoryType.None
     }
+    
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1

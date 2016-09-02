@@ -58,21 +58,30 @@ class symptomsViewController: UIViewController, UITableViewDelegate {
         return 1
     }
     
+    
+    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         if segue.identifier == "triggersSegue" {
             let destinationViewController = segue.destinationViewController as? triggersViewController
             destinationViewController!.eventDate = eventDate
-            let selectedCells = self.symptomsTableView.indexPathsForSelectedRows!
-            
-            for indexPath in selectedCells {
-                let cellToBeAdded = symptomsTableView.cellForRowAtIndexPath(indexPath)! as UITableViewCell
-                let symptom :String = (cellToBeAdded.textLabel?.text)!
-                print(symptom)
-                selectedSymptoms.append(symptom)
+            var selectedCells = [NSIndexPath]()
+ 
+            if selectedCells.isEmpty {
+                // Allows user not to select anything - change to notification prompting selection
+                selectedSymptoms.append(" ")
+            } else {
+                selectedCells = self.symptomsTableView.indexPathsForSelectedRows!
+                
+                for indexPath in selectedCells {
+                    let cellToBeAdded = symptomsTableView.cellForRowAtIndexPath(indexPath)! as UITableViewCell
+                    let symptom :String = (cellToBeAdded.textLabel?.text)!
+                    print(symptom)
+                    selectedSymptoms.append(symptom)
+                }
+                destinationViewController?.symptoms = selectedSymptoms
+                
             }
-            destinationViewController?.symptoms = selectedSymptoms
-
         }
         
         
